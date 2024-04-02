@@ -1,5 +1,8 @@
 import React from "react";
+import { Helmet } from 'react-helmet-async';
+import './css/bootstrap.min.css';
 import "./index.css";
+import 'swiper/swiper-bundle.min.css';
 import logo from "../../images/main-logo.png";
 import dhl from "../../images/dhl.png";
 import mastercard from "../../images/mastercard.jpg";
@@ -28,11 +31,10 @@ import instaitem5 from "../../images/insta-item5.jpg"
 const Home = () => {
   return (
     <>
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="plugins.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+        <script src="js/modernizr.js"></script>
       <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
     <svg xmlns="http://www.w3.org/2000/svg" style={{ display: 'none' }}>
       <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -950,7 +952,11 @@ const Home = () => {
         </div>
       </div>
     </div>
-
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="plugins.js"></script>
+        <script type="text/javascript" src="script.js"></script>
   </body>
     </>
   );
